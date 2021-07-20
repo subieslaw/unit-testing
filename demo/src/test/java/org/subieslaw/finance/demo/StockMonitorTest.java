@@ -36,7 +36,7 @@ public class StockMonitorTest {
 
     @Test
     public void should_register_stock_for_monitoring() {
-        //givem
+        //given
         this.stockMonitor = new StockPriceMonitor(null, null, null);
         //when
         boolean registered = this.stockMonitor.registerStockForMonitoring("XXX", null);
