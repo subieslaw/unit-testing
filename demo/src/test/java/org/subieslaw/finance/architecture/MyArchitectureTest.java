@@ -22,13 +22,25 @@ public class MyArchitectureTest {
                                                     .importPackages("org.subieslaw.finance");
     @Test
     public void classes_should_have_final_fields() {
-        ArchRule rule = classes().that().arePublic().should().haveOnlyFinalFields().because("Immutable is a virtue");
+        ArchRule rule = classes()
+                            .that()
+                            .arePublic()
+                            .should()
+                            .haveOnlyFinalFields()
+                            .because("Immutable is a virtue");
+
         rule.check(importedClasses);
     }
 
     @Test
     public void classes_should_have_private_constructors() {
-        ArchRule rule = classes().that().arePublic().should().haveOnlyPrivateConstructors().because("We value our privacy here");
+        ArchRule rule = classes()
+                            .that()
+                            .arePublic()
+                            .should()
+                            .haveOnlyPrivateConstructors()
+                            .because("We value our privacy here");
+                            
         rule.check(importedClasses);
     }
 
