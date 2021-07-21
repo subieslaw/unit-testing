@@ -2,7 +2,6 @@ package org.subieslaw.finance.demo;
 
 import java.math.BigDecimal;
 
-import lombok.AllArgsConstructor;
 import lombok.Builder;
 
 @Builder
